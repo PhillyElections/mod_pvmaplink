@@ -12,4 +12,4 @@ $userCount = $params->get('usercount');
 $items = ModHelloWorld2Helper::getItems($userCount);
 
 // include the template for display
-require JModuleHelper::getLayoutPath('mod_hello_world2');
+require JModuleHelper::getLayoutPath('mod_maplink');
