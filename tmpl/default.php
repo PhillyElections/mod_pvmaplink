@@ -1,5 +1,5 @@
 <?php defined('_JEXEC') or die('Restricted access');
-
+$document = &JFactory::getDocument();
 $document->addCustomTag('<script src="/modules/mod_maplink/js/maplink.js" async defer></script>');
 ?>
 <?php echo JText::_('RANDOM USERS'); ?>
