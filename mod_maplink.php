@@ -2,14 +2,9 @@
 //no direct access
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
-// include the helper file
-require_once dirname(__FILE__) . DS . 'helper.php';
-
-// get a parameter from the module's configuration
-$userCount = $params->get('usercount');
-
-// get the items to display from the helper
-$items = ModHelloWorld2Helper::getItems($userCount);
-
-// include the template for display
-require JModuleHelper::getLayoutPath('mod_maplink');
+$document = &JFactory::getDocument();
+$document->addCustomTag('<script src="/modules/mod_maplink/js/maplink.js" async defer></script>');
+?>
+<form action="<?=JRoute::_('index.php?option=com_voterapp');?>" method="post" id="josForm" name="josForm" class="form-validate">
+    <input type="text" id="address1" name="address1" value="<?=$address1;?>" class="inputbox" placeholder="<?=JText::_('STREET PLACEHOLDER');?>" />
+</form>
