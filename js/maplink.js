@@ -30,7 +30,7 @@ var AC = (function() {
         inner.formData[addressType] = val;
       }
     }*/
-    document.location='/index.php?option=com_voterapp&tmpl=component&address='+urlencode(document.getElementById('address1').value);
+    document.location='/index.php?option=com_voterapp&tmpl=component&address='+encodeURIComponent(document.getElementById('address1').value);
     /*document.getElementById('address1').value = inner.formData['street_number'] + ' ' + inner.formData['route'];
     document.getElementById('city').value = inner.formData['locality'];
     document.getElementById('region').value = inner.formData['administrative_area_level_1'];
