@@ -19,23 +19,7 @@ var AC = (function() {
   inner.formData = {};
 
   inner.fillInAddress = function() {
-    // Get the place details from the inner.autoComplete object.
-//    var place = inner.autoComplete.getPlace();
-    // Get each component of the address from the place details
-    // and fill the corresponding field on the form.
-/*    for (var i = 0; i < place.address_components.length; i++) {
-      var addressType = place.address_components[i].types[0];
-      if (inner.returnData[addressType]) {
-        var val = place.address_components[i][inner.returnData[addressType]];
-        inner.formData[addressType] = val;
-      }
-    }*/
     document.location='/index.php?option=com_voterapp&tmpl=component&address='+encodeURIComponent(document.getElementById('address1').value);
-    /*document.getElementById('address1').value = inner.formData['street_number'] + ' ' + inner.formData['route'];
-    document.getElementById('city').value = inner.formData['locality'];
-    document.getElementById('region').value = inner.formData['administrative_area_level_1'];
-    document.getElementById('postcode').value = inner.formData['postal_code'];
-    document.getElementById('address2').focus();*/
   };
 
   inner.geolocate = function() {
