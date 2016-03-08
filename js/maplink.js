@@ -19,7 +19,7 @@ var AC = (function() {
   inner.formData = {};
 
   inner.fillInAddress = function() {
-    document.location='/index.php?option=com_voterapp&tmpl=component&address='+encodeURIComponent(document.getElementById('address1').value);
+    document.location='/index.php?option=com_voterapp&tmpl=component&address='+encodeURIComponent(document.getElementById('address').value);
   };
 
   inner.geolocate = function() {
@@ -38,7 +38,7 @@ var AC = (function() {
     if (typeof inner.autoComplete === 'undefined') {
       inner.autoComplete = new google.maps.places.Autocomplete(
         // @type {!HTMLInputElement} 
-        document.getElementById('address1'), {
+        document.getElementById('address'), {
           types: ['geocode']
         });
       // When the user selects an address from the dropdown, populate the address
@@ -57,7 +57,7 @@ var AC = (function() {
 
   outer.noComplete = function() {
     this.autoComplete.unbindAll();
-    google.maps.event.clearInstanceListeners(document.getElementById('address1'));
+    google.maps.event.clearInstanceListeners(document.getElementById('address'));
     inner.located = false;
   };
 
