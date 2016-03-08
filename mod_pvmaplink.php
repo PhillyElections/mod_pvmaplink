@@ -12,6 +12,6 @@ $document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" asyn
     width: inherit !important;
 }
 </style>
-<form action="<?=JRoute::_('index.php?option=com_voterapp');?>" method="get" id="josForm" name="josForm" class="form-validate">
+<form action="/index.php?option=com_voterapp" method="get" id="josForm" name="josForm" class="form-validate">
     <input type="text" id="address" name="address" width="23em" value="" class="inputbox" placeholder="<?=JText::_('ADDRESS PLACEHOLDER');?>" />
 </form>
