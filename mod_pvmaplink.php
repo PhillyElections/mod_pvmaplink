@@ -3,9 +3,9 @@
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
 $language = JFactory::getLanguage();
-$language->load('mod_maplink', JPATH_ADMIN);
+$language->load('mod_pvmaplink', JPATH_ADMIN);
 $document = &JFactory::getDocument();
-$document->addCustomTag('<script src="/modules/mod_maplink/js/maplink.js" async defer></script>');
+$document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" async defer></script>');
 ?>
 <style>
 .pac-container, .pac-item {
