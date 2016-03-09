@@ -12,8 +12,8 @@ $document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" asyn
     width: inherit !important;
 }
 #map-canvas {
-    padding-top: .25em;
-    padding-bottom: .25em;
+    margin-top: .25em;
+    margin-bottom: .25em;
     width: 100%;
     height: 100px;
 }
