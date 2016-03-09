@@ -24,7 +24,7 @@ var AC = (function() {
   outer.complete = function() {
   map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: new google.maps.LatLng(39.9500, -75.1642),
-    zoom: 17  });
+    zoom: 13  });
 
     if (typeof inner.autoComplete === 'undefined') {
       inner.autoComplete = new google.maps.places.Autocomplete(
