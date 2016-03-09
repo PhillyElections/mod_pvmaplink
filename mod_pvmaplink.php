@@ -12,8 +12,10 @@ $document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" asyn
     width: inherit !important;
 }
 #map-canvas {
-    width: 100px;
-    height: 50px;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    width: 100%;
+    height: 100px;
 }
 </style>
 <form action="/index.php" method="get" id="josForm" name="josForm" class="form-validate">
