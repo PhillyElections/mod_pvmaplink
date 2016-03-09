@@ -11,6 +11,10 @@ $document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" asyn
 .pac-container, .pac-item {
     width: inherit !important;
 }
+#map-canvas {
+    width: 100px;
+    height: 50px;
+}
 </style>
 <form action="/index.php" method="get" id="josForm" name="josForm" class="form-validate">
     <input type="text" id="address" name="address" width="23em" value="" class="inputbox" placeholder="<?=JText::_('ADDRESS PLACEHOLDER');?>" />
