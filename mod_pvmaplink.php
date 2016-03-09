@@ -16,4 +16,5 @@ $document->addCustomTag('<script src="/modules/mod_pvmaplink/js/maplink.js" asyn
     <input type="text" id="address" name="address" width="23em" value="" class="inputbox" placeholder="<?=JText::_('ADDRESS PLACEHOLDER');?>" />
     <input type="hidden" name="option" value="com_voterapp" />
     <input type="hidden" name="tmpl" value="component" />
+    <div id="map-canvas"></div>
 </form>
