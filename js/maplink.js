@@ -45,7 +45,7 @@ var AC = (function() {
     var script = document.createElement('script');
     script.id = '_gmaps';
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&callback=AC.complete';
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&callback=AC.complete&key=AIzaSyDG7jgg6RbsEKG7UFXsSPi7F5RyRDTasnE';
     document.body.appendChild(script);
   };
 
