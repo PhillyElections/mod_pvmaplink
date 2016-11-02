@@ -16,7 +16,10 @@
         <filename>index.html</filename>
         <folder>js/</folder>
     </files>
- 
+     <!-- Optional parameters -->
+	<params>
+        <param name="showmap" type="text" default="TRUE" label="LABEL SHOW MAP" description="display a vestigal (but real) gmaps box" />
+    </params>
     <languages>
         <!-- Any language files included with the module -->
         <language tag="en-GB">en-GB.mod_pvmaplink.ini</language>
