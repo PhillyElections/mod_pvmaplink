@@ -18,7 +18,7 @@
     </files>
      <!-- Optional parameters -->
 	<params>
-        <param name="showmap" type="text" default="TRUE" label="LABEL SHOW MAP" description="display a vestigal (but real) gmaps box" />
+        <param name="showmap" type="text" default="TRUE" label="LABEL SHOW MAP" description="display a vestigal (but real) gmaps box. only 'TRUE' displays successfully." />
     </params>
     <languages>
         <!-- Any language files included with the module -->
