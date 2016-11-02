@@ -22,6 +22,12 @@ if ($showMap) :
     height: 100px;
 }
 <?php
+else:
+?>
+#map-canvas {
+display:none;
+}
+<?php
 endif;
 ?>
 </style>
@@ -29,11 +35,5 @@ endif;
     <input type="text" id="address" name="address" width="23em" value="" class="inputbox" placeholder="<?=JText::_('ADDRESS PLACEHOLDER');?>" />
     <input type="hidden" name="option" value="com_voterapp" />
     <input type="hidden" name="tmpl" value="component" />
-<?php
-if ($showMap) :
-?>
     <div id="map-canvas"></div>
-<?php
-endif;
-?>
 </form>
